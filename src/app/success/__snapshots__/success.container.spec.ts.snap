@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Success container should render the component 1`] = `
+<success-container>
+  <div
+    class="payment-success"
+  >
+    <mat-card
+      class="mat-card"
+    >
+      <mat-card-title
+        class="mat-card-title"
+      >
+        <h1>
+          Success
+        </h1>
+      </mat-card-title>
+      <mat-card-content
+        class="mat-card-content"
+      >
+        <completed-message>
+          <div>
+            <div>
+              Your payment has now been authorized.
+            </div>
+          </div>
+        </completed-message>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</success-container>
+`;

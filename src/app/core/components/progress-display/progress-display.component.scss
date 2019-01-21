@@ -1,0 +1,21 @@
+.progress-display {
+  padding: 20px;
+
+  .progress-display__label {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .progress-display__spinner {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+
+    mat-progress-spinner {
+      position: absolute;
+      left: -50px;
+    }
+  }
+
+}

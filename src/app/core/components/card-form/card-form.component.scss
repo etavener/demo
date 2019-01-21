@@ -1,0 +1,18 @@
+form {
+  & > * {
+    display: block;
+  }
+
+  .small-field {
+    max-width: 200px;
+  }
+
+  .full-field {
+    max-width: 400px;
+  }
+}
+
+.mb-md {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

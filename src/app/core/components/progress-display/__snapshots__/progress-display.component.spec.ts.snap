@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressDisplayComponent should render the component 1`] = `
+<progress-display>
+  <div
+    class="progress-display"
+  >
+    <div
+      class="progress-display__label"
+    >
+       Your payment is currently being Authorized 
+    </div>
+    <div
+      class="progress-display__spinner"
+    >
+      <mat-progress-spinner
+        mode="indeterminate"
+      />
+    </div>
+  </div>
+</progress-display>
+`;

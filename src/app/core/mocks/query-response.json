@@ -1,0 +1,22 @@
+{
+  "_links": {
+    "payments:authorize": {
+      "href": "https://try.access.worldpay.com/payments/authorizations"
+    },
+    "tokens:tokens": {
+      "href": "https://try.access.worldpay.com/tokens"
+    },
+    "curies": [
+      {
+        "href": "https://try.access.worldpay.com/rels/payments/{rel}",
+        "name": "payments",
+        "templated": true
+      },
+      {
+        "href": "https://try.access.worldpay.com/rels/tokens/{rel}.json",
+        "name": "tokens",
+        "templated": true
+      }
+    ]
+  }
+}

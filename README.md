@@ -1,4 +1,27 @@
-# PaymentApp
+# Payment
+
+## Assignment
+Your customer is an E-Commerce merchant. They require a UI that will enable their shoppers to purchase goods and cancel those purchases.
+You are required to create a simple UI that allows a shopper to Authorize and optionally Cancel a payment using the Access Worldpay API’s - https://beta.developer.worldpay.com/docs/access-worldpay; see Take a Payment for more details - https://beta.developer.worldpay.com/docs/access-worldpay/payments/take-a-payment.
+Additionally you can implement other flows such as settling a payment and refunds.
+
+## Guidelines
+•	The solution should be written in TypeScript or JavaScript
+•	No restrictions on external libraries
+•	Submit as a git repository (link to GitHub, BitBucket, etc)
+•	We are looking for a simple solution representative of an enterprise deliverable. For example consider coupling and the benefits of using hypermedia.
+•	Use TDD - demonstrate unit, integration and acceptance tests
+•	Please stub interactions with the Access Worldpay API’s
+•	Feel free to make any assumptions and document in a README markdown file, or otherwise, with the submission - such as feasibility of component, PCI implications, security concerns, etc
+
+
+Notes from developer:
+- Jest used for unit / snapshot testing
+- e2e journey covers the happy path
+- API's mocked with an interceptor
+- Angular material used for UI components
+- Would have used NGRX but didn't have the time
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 

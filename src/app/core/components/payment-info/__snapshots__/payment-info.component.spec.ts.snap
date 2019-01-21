@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Payment Info Component should render the content 1`] = `
+<test-payment-info
+  details={[Function Object]}
+>
+  <payment-info
+    ng-reflect-details="[object Object]"
+  >
+    <div
+      class="payment-info"
+    >
+      <div
+        class="payment-info__value"
+      >
+        <span>
+          100
+        </span>
+        <span>
+           
+        </span>
+        <span>
+          GBP
+        </span>
+      </div>
+      <div
+        class="payment-info__description"
+      >
+        <span>
+          description
+        </span>
+      </div>
+    </div>
+  </payment-info>
+</test-payment-info>
+`;

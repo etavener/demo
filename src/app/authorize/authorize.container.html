@@ -1,0 +1,13 @@
+<div class="payment-process">
+  <mat-card>
+    <mat-card-title>
+      <h1>Payment</h1>
+    </mat-card-title>
+    <mat-card-content>
+      <card-form [details]="details"
+                 *ngIf="!processing"
+                 (submit)="onAuthorize($event)"></card-form>
+      <progress-display *ngIf="processing"></progress-display>
+    </mat-card-content>
+  </mat-card>
+</div>

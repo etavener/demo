@@ -1,0 +1,110 @@
+<mat-vertical-stepper [linear]="true">
+
+  <mat-step label="Payment Details">
+    <payment-info [details]="details">
+    </payment-info>
+    <mat-divider [inset]="true"></mat-divider>
+    <div class="mb-md">
+      <button mat-raised-button
+              matStepperNext
+              color="primary">
+        Make payment
+      </button>
+    </div>
+  </mat-step>
+
+  <mat-step label="Card Details"
+            [stepControl]="cardFormGroup"
+            errorMessage="Please complete the card details">
+    <form [formGroup]="cardFormGroup"
+          data-role="card-form">
+      <!-- move input to a reusable component -->
+      <mat-form-field class="full-field">
+        <input matInput
+               required
+               type="text"
+               data-role="name"
+               formControlName="nameCtrl"
+               placeholder="Name on Card">
+      </mat-form-field>
+      <!-- move input to a reusable component -->
+      <mat-form-field class="full-field">
+        <input matInput
+               maxlength="16"
+               type="text"
+               required
+               data-role="number"
+               formControlName="cardCtrl"
+               placeholder="Card Number">
+      </mat-form-field>
+      <input-expiry-date class="small-field"></input-expiry-date>
+      <!-- move input to a reusable component -->
+      <mat-form-field class="small-field">
+        <input matInput
+               type="text"
+               maxlength="3"
+               [max]="3"
+               required
+               data-role="cvc"
+               formControlName="cvcCtrl"
+               placeholder="CVC">
+      </mat-form-field>
+    </form>
+    <mat-divider [inset]="true"></mat-divider>
+    <div class="mb-md">
+      <button mat-raised-button
+              color="primary"
+              matStepperNext>
+        Add Billing Address
+      </button>
+    </div>
+  </mat-step>
+
+  <mat-step label="Billing Address" [optional]="true">
+    <form [formGroup]="addressFormGroup"
+          data-role="address-form">
+      <mat-form-field class="full-field">
+        <input matInput
+               data-role="address1"
+               formControlName="addressCtrl"
+               placeholder="Address 1">
+      </mat-form-field>
+      <mat-form-field class="full-field">
+        <input matInput
+               data-role="address2"
+               formControlName="addressCtrl"
+               placeholder="Address 2">
+      </mat-form-field>
+      <mat-form-field class="full-field">
+        <mat-select placeholder="Country" value="GB">
+          <!-- todo : add dynamic values / labels with ngFor.. -->
+          <mat-option value="GB">
+            United Kingdom
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <!-- todo: validation of postcode -->
+      <mat-form-field class="full-field">
+        <input matInput
+               data-role="postcode"
+               formControlName="addressCtrl"
+               placeholder="Post Code">
+      </mat-form-field>
+    </form>
+    <mat-divider [inset]="true"></mat-divider>
+    <div class="mb-md">
+      <button mat-raised-button matStepperPrevious>
+        Return to card details
+      </button>
+      <button mat-raised-button
+              matStepperNext
+              class="submit-btn"
+              (click)="submitPayment()"
+              color="primary">
+        Submit
+      </button>
+    </div>
+  </mat-step>
+
+</mat-vertical-stepper>

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompletedMessageComponent should create 1`] = `
+<completed-message>
+  <div>
+    <div>
+      Your payment has now been authorized.
+    </div>
+  </div>
+</completed-message>
+`;

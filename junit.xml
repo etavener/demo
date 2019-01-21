@@ -1,0 +1,149 @@
+<testsuites name="jest tests" tests="4" failures="2" time="5.397">
+  <testsuite name="CompletedMessageComponent" errors="0" failures="0" skipped="0" timestamp="2019-01-19T22:42:21" time="3.374" tests="1">
+    <testcase classname="CompletedMessageComponent should create" name="CompletedMessageComponent should create" time="0.137">
+    </testcase>
+  </testsuite>
+  <testsuite name="AppComponent" errors="0" failures="0" skipped="0" timestamp="2019-01-19T22:42:21" time="3.406" tests="1">
+    <testcase classname="AppComponent should create the app" name="AppComponent should create the app" time="0.139">
+    </testcase>
+  </testsuite>
+  <testsuite name="PaymentInfoComponent" errors="0" failures="1" skipped="0" timestamp="2019-01-19T22:42:21" time="3.898" tests="1">
+    <testcase classname="PaymentInfoComponent should create" name="PaymentInfoComponent should create" time="0.537">
+      <failure>TypeError: Cannot read property &apos;value&apos; of undefined
+    at Object.eval [as updateRenderer] (ng:///DynamicTestModule/PaymentInfoComponent.ngfactory.js:19:33)
+    at Object.debugUpdateRenderer [as updateRenderer] (/Users/ewantavener/Documents/projects/technical_tests/packages/core/src/view/services.ts:409:19)
+    at checkAndUpdateView (/Users/ewantavener/Documents/projects/technical_tests/packages/core/src/view/view.ts:368:12)
+    at callViewAction (/Users/ewantavener/Documents/projects/technical_tests/packages/core/src/view/view.ts:615:11)
+    at execComponentViewsAction (/Users/ewantavener/Documents/projects/technical_tests/packages/core/src/view/view.ts:559:7)
+    at checkAndUpdateView (/Users/ewantavener/Documents/projects/technical_tests/packages/core/src/view/view.ts:370:3)
+    at callWithDebugContext (/Users/ewantavener/Documents/projects/technical_tests/packages/core/src/view/services.ts:629:23)
+    at Object.debugCheckAndUpdateView [as checkAndUpdateView] (/Users/ewantavener/Documents/projects/technical_tests/packages/core/src/view/services.ts:346:10)
+    at ViewRef_.detectChanges (/Users/ewantavener/Documents/projects/technical_tests/packages/core/src/view/refs.ts:261:16)
+    at ComponentFixture._tick (/Users/ewantavener/Documents/projects/packages/core/testing/src/component_fixture.ts:107:28)
+    at /Users/ewantavener/Documents/projects/packages/core/testing/src/component_fixture.ts:120:36
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:391:26)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/proxy.js:129:39)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:390:52)
+    at Object.onInvoke (/Users/ewantavener/Documents/projects/technical_tests/packages/core/src/zone/ng_zone.ts:273:25)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:390:52)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:150:43)
+    at NgZone.run (/Users/ewantavener/Documents/projects/technical_tests/packages/core/src/zone/ng_zone.ts:171:50)
+    at ComponentFixture.detectChanges (/Users/ewantavener/Documents/projects/packages/core/testing/src/component_fixture.ts:120:19)
+    at /Users/ewantavener/Documents/projects/technical_tests/payment/src/app/core/components/payment-info/payment-info.component.spec.ts:19:13
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:391:26)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/proxy.js:129:39)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:390:52)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:150:43)
+    at Object.testBody.length (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-zone-patch/index.js:50:27)
+    at Object.asyncJestLifecycle (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/jasmine_async.js:63:37)
+    at resolve (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="ProgressDisplayComponent" errors="0" failures="1" skipped="0" timestamp="2019-01-19T22:42:21" time="3.986" tests="1">
+    <testcase classname="ProgressDisplayComponent should create" name="ProgressDisplayComponent should create" time="0.75">
+      <failure>Error: Template parse errors:
+&apos;mat-progress-spinner&apos; is not a known element:
+1. If &apos;mat-progress-spinner&apos; is an Angular component, then verify that it is part of this module.
+2. If &apos;mat-progress-spinner&apos; is a Web Component then add &apos;CUSTOM_ELEMENTS_SCHEMA&apos; to the &apos;@NgModule.schemas&apos; of this component to suppress this message. (&quot;
+  &lt;/div&gt;
+  &lt;div class=&quot;progress-display__spinner&quot;&gt;
+    [ERROR -&gt;]&lt;mat-progress-spinner mode=&quot;indeterminate&quot;&gt;&lt;/mat-progress-spinner&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&quot;): ng:///DynamicTestModule/ProgressDisplayComponent.html@5:4
+    at syntaxError (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/util.ts:100:17)
+    at TemplateParser.parse (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/template_parser/template_parser.ts:106:13)
+    at JitCompiler._parseTemplate (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/jit/compiler.ts:297:33)
+    at JitCompiler._compileTemplate (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/jit/compiler.ts:275:11)
+    at /Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/jit/compiler.ts:206:42
+    at Set.forEach (&lt;anonymous&gt;)
+    at JitCompiler._compileComponents (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/jit/compiler.ts:206:15)
+    at /Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/jit/compiler.ts:117:12
+    at Object.then (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/util.ts:89:74)
+    at JitCompiler._compileModuleAndAllComponents (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/jit/compiler.ts:115:22)
+    at JitCompiler.compileModuleAndAllComponentsAsync (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/jit/compiler.ts:69:33)
+    at CompilerImpl.compileModuleAndAllComponentsAsync (/Users/ewantavener/Documents/projects/technical_tests/packages/platform-browser-dynamic/src/compiler_factory.ts:68:27)
+    at TestingCompilerImpl.compileModuleAndAllComponentsAsync (/Users/ewantavener/Documents/projects/packages/platform-browser-dynamic/testing/src/compiler_factory.ts:57:27)
+    at TestBedViewEngine.compileComponents (/Users/ewantavener/Documents/projects/packages/core/testing/src/test_bed.ts:377:27)
+    at Function.TestBedViewEngine.compileComponents (/Users/ewantavener/Documents/projects/packages/core/testing/src/test_bed.ts:164:66)
+    at /Users/ewantavener/Documents/projects/technical_tests/payment/src/app/core/components/progress-display/progress-display.component.spec.ts:13:6
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:391:26)
+    at AsyncTestZoneSpec.Object.&lt;anonymous&gt;.AsyncTestZoneSpec.onInvoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/async-test.js:106:39)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/proxy.js:126:39)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:390:52)
+    at Zone.Object.&lt;anonymous&gt;.Zone.runGuarded (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:161:47)
+    at runInTestZone (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/async-test.js:234:29)
+    at /Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/async-test.js:168:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:391:26)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/proxy.js:129:39)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:390:52)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:150:43)
+    at Object.testBody.length.done (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-zone-patch/index.js:51:29)
+    at resolve (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+      <failure>Error: Template parse errors:
+&apos;mat-progress-spinner&apos; is not a known element:
+1. If &apos;mat-progress-spinner&apos; is an Angular component, then verify that it is part of this module.
+2. If &apos;mat-progress-spinner&apos; is a Web Component then add &apos;CUSTOM_ELEMENTS_SCHEMA&apos; to the &apos;@NgModule.schemas&apos; of this component to suppress this message. (&quot;
+  &lt;/div&gt;
+  &lt;div class=&quot;progress-display__spinner&quot;&gt;
+    [ERROR -&gt;]&lt;mat-progress-spinner mode=&quot;indeterminate&quot;&gt;&lt;/mat-progress-spinner&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&quot;): ng:///DynamicTestModule/ProgressDisplayComponent.html@5:4
+    at syntaxError (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/util.ts:100:17)
+    at TemplateParser.parse (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/template_parser/template_parser.ts:106:13)
+    at JitCompiler._parseTemplate (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/jit/compiler.ts:297:33)
+    at JitCompiler._compileTemplate (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/jit/compiler.ts:275:11)
+    at /Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/jit/compiler.ts:206:42
+    at Set.forEach (&lt;anonymous&gt;)
+    at JitCompiler._compileComponents (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/jit/compiler.ts:206:15)
+    at /Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/jit/compiler.ts:117:12
+    at Object.then (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/util.ts:89:74)
+    at JitCompiler._compileModuleAndAllComponents (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/jit/compiler.ts:115:22)
+    at JitCompiler.compileModuleAndAllComponentsSync (/Users/ewantavener/Documents/projects/technical_tests/packages/compiler/src/jit/compiler.ts:65:38)
+    at CompilerImpl.compileModuleAndAllComponentsSync (/Users/ewantavener/Documents/projects/technical_tests/packages/platform-browser-dynamic/src/compiler_factory.ts:60:35)
+    at TestingCompilerImpl.compileModuleAndAllComponentsSync (/Users/ewantavener/Documents/projects/packages/platform-browser-dynamic/testing/src/compiler_factory.ts:52:27)
+    at TestBedViewEngine._initIfNeeded (/Users/ewantavener/Documents/projects/packages/core/testing/src/test_bed.ts:391:28)
+    at TestBedViewEngine.createComponent (/Users/ewantavener/Documents/projects/packages/core/testing/src/test_bed.ts:594:10)
+    at Function.TestBedViewEngine.createComponent (/Users/ewantavener/Documents/projects/packages/core/testing/src/test_bed.ts:247:36)
+    at /Users/ewantavener/Documents/projects/technical_tests/payment/src/app/core/components/progress-display/progress-display.component.spec.ts:17:23
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:391:26)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/proxy.js:129:39)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:390:52)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:150:43)
+    at Object.testBody.length (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-zone-patch/index.js:50:27)
+    at Object.asyncJestLifecycle (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/jasmine_async.js:63:37)
+    at resolve (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+      <failure>Error: expect(received).toBeTruthy()
+
+Received: undefined
+    at /Users/ewantavener/Documents/projects/technical_tests/payment/src/app/core/components/progress-display/progress-display.component.spec.ts:23:23
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:391:26)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/proxy.js:129:39)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:390:52)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/zone.js/dist/zone.js:150:43)
+    at Object.testBody.length (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-zone-patch/index.js:50:27)
+    at Object.asyncJestTest (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/ewantavener/Documents/projects/technical_tests/payment/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
